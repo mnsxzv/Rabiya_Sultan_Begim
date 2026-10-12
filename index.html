@@ -260,6 +260,144 @@
         <div id="tab-overview" class="tab-panel space-y-6">
           <div class="relative rounded-2xl overflow-hidden border border-amber-500/40 bg-stone-950 shadow-2xl group">
             <div class="relative h-60 sm:h-72 w-full overflow-hidden bg-gradient-to-b from-stone-900 to-stone-950">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A0%D0%B0%D0%B1%D0%B8%D1%8F_%D0%A1%D1%83%D0%BB%D1%82%D0%B0%D0%BD-%D0%B1%D0%B5%D0%B3%D0%B8%D0%BC_%D0%A2%D1%83%D1%80%D0%BA%D0%B5%D1%81%D1%82%D0%B0%D0%BD.jpg" alt="Рабия Сұлтан Бегімнің көркем реконструкциясы (тарихи фотосурет емес)" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.alt='Рабия Сұлтан Бегімнің көркем реконструкциясы жүктелмеді';" />
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/50 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-left">
+                <span class="inline-block px-2.5 py-1 rounded-full bg-amber-500/90 text-stone-950 text-xs font-bold uppercase tracking-wider mb-2">
+                  XV ғасыр • Тарихи дала ханшайымы
+                </span>
+                <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-white drop-shadow-md">
+                  Рабия Сұлтан Бегім
+                </h3>
+                <p class="text-xs sm:text-sm text-amber-200/90 mt-1 max-w-2xl">
+                  Ұлықбектің қызы, Әбілқайыр ханның жары, Дешті Қыпшақ пен Мауереннахр арасындағы дипломатиялық және мәдени байланысты нығайтқан кемеңгер тұлға.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 sm:p-5 bg-stone-950/95 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center border-t border-stone-800">
+              <div class="p-2.5 rounded-xl bg-stone-900 border border-stone-800">
+                <span class="text-xs text-stone-400 block">Өмір сүрген дәуірі</span>
+                <span class="text-sm font-bold text-amber-300">~1430 – 1485 жж.</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-stone-900 border border-stone-800">
+                <span class="text-xs text-stone-400 block">Әкесі</span>
+                <span class="text-sm font-bold text-amber-300">Мұхаммед Ұлықбек</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-stone-900 border border-stone-800">
+                <span class="text-xs text-stone-400 block">Жұбайы</span>
+                <span class="text-sm font-bold text-amber-300">Әбілқайыр хан</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-stone-900 border border-stone-800">
+                <span class="text-xs text-stone-400 block">Кесенесі орны</span>
+                <span class="text-sm font-bold text-amber-300">Түркістан қаласы</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-stone-900/80 border border-stone-800 hover:border-amber-500/50 transition cursor-pointer group" onclick="switchTab('project')">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">📖</div>
+                <h4 class="font-bold text-stone-100 text-base">Зерттеудің өзектілігі мен міндеттері</h4>
+              </div>
+              <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                Ортағасырлық тарихи-мәдени мұраны цифрлық форматта насихаттау және Ұлы даланың саяси тарихындағы әйелдер рөлін жаңғырту.
+              </p>
+              <span class="text-xs text-amber-400 font-semibold mt-3 inline-flex items-center gap-1">Толық танысу →</span>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-stone-900/80 border border-stone-800 hover:border-amber-500/50 transition cursor-pointer group" onclick="switchTab('mausoleum')">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400">🏛️</div>
+                <h4 class="font-bold text-stone-100 text-base">Түркістандағы кесене сәулеті</h4>
+              </div>
+              <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                Қожа Ахмет Ясауи кешеніндегі сегіз қырлы көгілдір күмбезді монумент. 1895 жылғы оқиға және 1978–1980 жж. қалпына келтіру тарихы.
+              </p>
+              <span class="text-xs text-teal-400 font-semibold mt-3 inline-flex items-center gap-1">Сәулетін зерттеу →</span>
+            </div>
+          </div>
+
+          <div id="selectedPointCard" class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-amber-500 text-stone-950 font-bold flex items-center justify-center shrink-0">📍</div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 id="spTitle" class="font-bold text-amber-300 text-sm">Рабия Сұлтан Бегім кесенесі (Түркістан)</h4>
+                <span id="spEra" class="text-[11px] bg-stone-800 px-2 py-0.5 rounded text-amber-200">XV ғасыр</span>
+              </div>
+              <p id="spDesc" class="text-xs text-stone-300 mt-1">Қожа Ахмет Ясауи кесенесінің оңтүстік-шығысында 60 метр қашықтықта орналасқан XV ғасырдағы ортағасырлық сәулет өнерінің бірегей туындысы.</p>
+              <p id="spSignificance" class="text-[11px] text-amber-400/90 mt-1 font-medium">Тарихи мәні: Ұлы даланың ықпалды ханшайымына арнап салынған киелі кесене.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: SCIENTIFIC PROJECT FOUNDATION -->
+        <div id="tab-project" class="tab-panel hidden space-y-6">
+          <div class="border-b border-stone-800 pb-3">
+            <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider">Ғылыми жоба құрылымы</span>
+            <h3 class="text-xl font-bold text-stone-100 mt-1">Зерттеудің өзектілігі</h3>
+          </div>
+
+          <div class="grid grid-cols-1 gap-3">
+            <div class="p-4 rounded-xl bg-stone-900/90 border border-stone-800 flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+              <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+                <strong>Ұлттық тарихи сананы жаңғырту:</strong> XV ғасырдағы Қазақ даласының күрделі геосаяси жағдайында бейбітшілік пен тұрақтылықты қамтамасыз еткен Рабия Сұлтан Бегімнің тарихи тұлғасын жаңа көзқараспен зерделеу.
+              </p>
+            </div>
+            <div class="p-4 rounded-xl bg-stone-900/90 border border-stone-800 flex items-start gap-3">
+              <span class=" <div class="truncate">
+              <h2 class="text-sm font-bold tracking-tight text-amber-300 truncate">
+                Рабия Сұлтан Бегім: Ұлы даланың ықпалды ханшайымы
+              </h2>
+              <p class="text-[11px] text-stone-400 truncate hidden xs:block">
+                Ғылыми-жобалық платформа • Түркістан кесенесі & Leaflet картасы
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-1 shrink-0">
+            <button id="btnToggleSheetHeight" class="p-1.5 text-stone-300 hover:text-amber-400 hover:bg-stone-800/80 rounded-lg transition" title="Панель өлшемін өзгерту">
+              <span id="sheetToggleIcon" class="text-sm font-bold text-amber-400">🔼</span>
+            </button>
+            <button id="btnMinimizeSheet" class="p-1.5 text-stone-400 hover:text-stone-200 hover:bg-stone-800/80 rounded-lg transition" title="Панельді жинау">
+              ✕
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div id="tabsContainer" class="flex items-center gap-1.5 px-4 py-2 border-b border-stone-800 overflow-x-auto no-scrollbar shrink-0 bg-stone-900/90 text-xs">
+        <button class="tab-btn px-3 py-1.5 rounded-full font-bold whitespace-nowrap transition bg-amber-500 text-stone-950 shadow-md flex items-center gap-1.5" data-tab="overview">
+          <span>📜</span><span>Шолу</span>
+        </button>
+        <button class="tab-btn px-3 py-1.5 rounded-full font-medium whitespace-nowrap transition text-stone-300 hover:bg-stone-800 hover:text-amber-200 flex items-center gap-1.5" data-tab="project">
+          <span>📖</span><span>Ғылыми негіздеме</span>
+        </button>
+        <button class="tab-btn px-3 py-1.5 rounded-full font-medium whitespace-nowrap transition text-stone-300 hover:bg-stone-800 hover:text-amber-200 flex items-center gap-1.5" data-tab="biography">
+          <span>👑</span><span>Тұлға тарихы</span>
+        </button>
+        <button class="tab-btn px-3 py-1.5 rounded-full font-medium whitespace-nowrap transition text-stone-300 hover:bg-stone-800 hover:text-amber-200 flex items-center gap-1.5" data-tab="mausoleum">
+          <span>🏛️</span><span>Кесене сәулеті</span>
+        </button>
+        <button class="tab-btn px-3 py-1.5 rounded-full font-medium whitespace-nowrap transition text-stone-300 hover:bg-stone-800 hover:text-amber-200 flex items-center gap-1.5" data-tab="statehood">
+          <span>🇰🇿</span><span>Мемлекеттік үлес</span>
+        </button>
+        <button class="tab-btn px-3 py-1.5 rounded-full font-medium whitespace-nowrap transition text-stone-300 hover:bg-stone-800 hover:text-amber-200 flex items-center gap-1.5" data-tab="quiz">
+          <span>❓</span><span>Викторина (Тест)</span>
+        </button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div id="tabContentContainer" class="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 max-w-5xl mx-auto w-full">
+        
+        <!-- TAB 1: OVERVIEW -->
+        <div id="tab-overview" class="tab-panel space-y-6">
+          <div class="relative rounded-2xl overflow-hidden border border-amber-500/40 bg-stone-950 shadow-2xl group">
+            <div class="relative h-60 sm:h-72 w-full overflow-hidden bg-gradient-to-b from-stone-900 to-stone-950">
               <img src="/src/assets/images/rabiya_sultan_begim_1791832334407.jpg" alt="Рабия Сұлтан Бегім портреті" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80'" />
               <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/50 to-transparent"></div>
               <div class="absolute bottom-4 left-4 right-4 text-left">
